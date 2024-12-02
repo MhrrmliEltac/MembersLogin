@@ -69,17 +69,11 @@ const Banner = () => {
         onChange={(e) => handleInputChange(e)}
         id="search"
       />
-      <Button
-        text="Recently added"
-        onClick={() => {}}
-        icon={TbArrowsSort}
-        small
-      />
       <Select
         value={filterBy}
         onChange={(e) => setFilterBy(e.target.value)}
         displayEmpty
-        className="text-[#9F9FA1] text-sm md:w-[170px] border border-[#9F9FA1]"
+        className="text-[#9F9FA1] md:w-[170px] w-full h-[40px] border border-[#9F9FA1] font-medium text-xs md:text-sm rounded-full flex justify-around items-center"
       >
         <MenuItem value="" disabled>
           Filter by
